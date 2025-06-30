@@ -65,7 +65,7 @@ def format_number(num):
 @bot.message_handler(func=lambda message: message.text.lower() == 'помощь')
 def help_command(message):
     markup = telebot.types.InlineKeyboardMarkup()
-    btn1 = telebot.types.InlineKeyboardButton("🤖 Комаанды", callback_data="help_commands")
+    btn1 = telebot.types.InlineKeyboardButton("🤖 Команды", callback_data="help_commands")
     btn2 = telebot.types.InlineKeyboardButton("👑 Вип", callback_data="help_vip")
     btn3 = telebot.types.InlineKeyboardButton("💰 Бонус", callback_data="help_bonus")
     markup.add(btn1)
